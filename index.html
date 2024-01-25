@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        .mystyle{
+            background-color: red;
+            padding-block: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>to do list</h1>
+    <div class="container">
+        <input id="input" type="text">
+        <button id="addtodo">+</button>
+        <div class="to-do" id="todocontainer"></div>
+    </div> 
+    <br>
+    <br>
+    <button onclick="mylon()">add</button>
+    <div class="comma">
+        hello
+    </div>
+    <script>
+        let para = document.createElement('p')
+        para.innerText = "prova"
+        document.body.appendChild(para)
+        function mylon(){
+            let gona = document.querySelector(".comma").classList
+            gona.add("mystyle"); //ktu e shton ne css stilin e deshiruar
+        }
+
+    </script>
+</body>
+</html>
